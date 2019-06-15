@@ -3,9 +3,8 @@
 source credentials
 
 yandex-disk token --password=$PASSWORD $USER
-mkdir /data
-yandex-disk start --dir=/data
+yandex-disk start --dir=/app/src/demo/data
 
-echo 123
+echo "Greetings! Starting your CRDT Editor"
 
-/usr/bin/env bash
+cd /app/src/ && stack exec demo
